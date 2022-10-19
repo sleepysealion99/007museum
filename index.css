@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  box-sizing: border-box;
+  transition: .3s;
+  word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  object-fit: cover;
+}
+
+html {
+  background: #000;
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+.head {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.headLeft {
+  display: flex;
+  align-items: flex-end;
+}
+
+.headLeft img {
+  width: 120px;
+  height: 100px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  padding: 0 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.nav a:hover {
+  color: #f1dfbb;
+}
+
+.headRight {
+  width: 20%;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+.conLeft {
+  width: 50%;
+  height: 100%;
+}
+
+.map {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 28%;
+}
+
+.mapLeft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mapLeft button {
+  background: #fff;
+  color: #74021d;
+  font-size: 18px;
+  width: 35%;
+  padding: 5px;
+  cursor: pointer;
+  transition: .3s;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.mapLeft button:hover {
+  background: #f1dfbb;
+  color: #000;
+}
+
+.mapLeft span {
+  font-size: 20px;
+  color: #74021d;
+}
+
+.mapRight {
+  width: 60%;
+}
+
+.mapRight h4 {
+  margin-bottom: 10px;
+}
+
+.mapRight .mapTable {
+  display: flex;
+  width: 100%;
+}
+
+.mapRight .mapTxt {}
+
+.mapRight img {
+  width: 160px;
+  width: 160px;
+  margin-right: 20px;
+
+}
+
+.mapRight span {}
+
+.pathImg {
+  margin-top: 10px;
+  height: 72%;
+  width: 100%;
+}
+
+.pathImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.conRight {
+  width: 48%;
+  height: 100%;
+}
+
+.conRight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  padding: 20px;
+  width: 100%;
+}
+
+.marg {
+  width: 100%;
+}
+
+.marg div {
+  display: flex;
+}
+
+.marg .margItem {}
+
+.margItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.margItem img {
+  margin-bottom: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.margItem span {}
+
+/* 
+媒体查询
+当页面宽度小于1350px时，改变样式
+*/
+@media screen and (max-width:1350px) {
+  .content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .conLeft {
+    width: 100%;
+  }
+
+  .conRight {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .headRight {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .head {
+    flex-direction: column;
+  }
+
+  .headLeft {
+    width: 100%;
+  }
+
+  .headRight {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .headLeft {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headLeft img {
+    width: 85vw;
+    height: auto;
+  }
+
+  .map {
+    flex-direction: column;
+  }
+
+  .mapLeft {
+    width: 100%;
+  }
+
+  .mapRight {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
